@@ -1,0 +1,22 @@
+Layers vs Tiers
+•	Layers descriu gruparea logica a functionalitatii componentelor  in aplicatie
+•	Tiers descriu gruprea fizica a functionalitatii componentelor pe diferite servere, computere, retele sau locatii mobile
+•	Se pot gasi mai multe layers pe acelasi tier
+•	Aspectele/clasele cu aceeasi logica, spre exemplu business, se grupeaza intr-un layer, in schimb in cazul tiers, pot sa existe mai multe cu aceeasi logica, side-by-side tiers.
+•	La tiers infrastuctura limiteaza deciziile arhitecturale, restrictii de protocol, anumite dezvoltari nesuportate de target-ul nostru(server, computer, retea etc)
+•	Tiers au o limita se servere pe care le poti folosi, iar layers nu au
+•	Un layer = parte a codului, spre exemplu daca ai un tort, un layer e o felie
+•	Un tier = e ceva fizic(o masina), un server
+•	Flow-ul de date are o singura directie la layers, se intoarce la nevoie, „nu se opreste la nevoie”
+
+
+
+Layer implementation:
+Logging:
+-	Business: recuprearea, transformarea, procesarea si managementul datelor din cadrul aplicatiei, asigurand consistenta si validitatea lor
+
+Secturity :
+-	data layer  protejeaza baza de date, 
+-	da acces la diferite parti de date, doar cat e necesar,
+-	protejeaza mecanismul folosit pentru a avea acces la sursele de date
+-	
